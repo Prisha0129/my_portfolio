@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Prisha Jain | Portfolio</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+
+body{
+    font-family:Poppins,sans-serif;
+    background:#0a0d14;
+    color:#fff;
+    padding:40px;
+}
+
+.wrap{
+    display:grid;
+    grid-template-columns:320px 1fr;
+    gap:28px;
+    max-width:1300px;
+    margin:auto;
+}
+
+.card,.main{
+    background:linear-gradient(145deg,#171a22,#0f1118);
+    border-radius:28px;
+    padding:28px;
+}
+
+/* SIDEBAR */
+.avatar{
+    width:180px;
+    height:220px;
+    border-radius:24px;
+    object-fit:cover;
+    display:block;
+    margin:auto;
+}
+
+.name{
+    font-size:30px;
+    font-weight:700;
+    margin-top:18px;
+    text-align:center;
+}
+
+.role{
+    text-align:center;
+    margin-top:8px;
+    color:#aaa;
+}
+
+.line{
+    height:1px;
+    background:#2a2f3a;
+    margin:20px 0;
+}
+
+.info{
+    display:grid;
+    gap:16px;
+}
+
+.item{
+    display:flex;
+    gap:10px;
+    align-items:center;
+}
+
+.icon{
+    color:#67dcff;
+}
+
+/* NAV */
+.nav{
+    display:flex;
+    gap:20px;
+    margin-bottom:20px;
+    flex-wrap:wrap;
+}
+
+.nav a{
+    color:#aaa;
+    text-decoration:none;
+    font-weight:600;
+}
+
+.nav a:hover{
+    color:#67dcff;
+}
+
+/* SECTION */
+.section{
+    margin-top:40px;
+}
+
+.section h2{
+    font-size:32px;
+    margin-bottom:15px;
+}
+
+.text{
+    color:#b5bdc9;
+    line-height:1.8;
+    margin-bottom:15px;
+}
+
+/* SKILLS */
+.skills{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:12px;
+}
+
+.skills div{
+    background:#12151d;
+    padding:14px;
+    border-radius:12px;
+}
+
+/* PROJECTS */
+.projects{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:15px;
+}
+
+.project{
+    background:#12151d;
+    padding:18px;
+    border-radius:14px;
+}
+
+/* CONTACT */
+.contact a{
+    color:#67dcff;
+    text-decoration:none;
+}
+
+.contact p{
+    margin-bottom:10px;
+}
+
+/* RESPONSIVE */
+@media(max-width:900px){
+    .wrap{grid-template-columns:1fr}
+    .projects{grid-template-columns:1fr}
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="wrap">
+
+<!-- SIDEBAR -->
+
+<aside class="card">
+    <img src="portfolioimage.jpeg" class="avatar" alt="Prisha Jain">
+
+```
+<div class="name">Prisha Jain</div>
+<div class="role">Aspiring Software Developer 🚀</div>
+
+<div class="line"></div>
+
+<div class="info">
+    <div class="item">
+        <i class="fa-solid fa-envelope icon"></i>
+        <span>prishanileshjain@gmail.com</span>
+    </div>
+
+    <div class="item">
+        <i class="fa-brands fa-linkedin icon"></i>
+        <a href="https://www.linkedin.com/in/prishajain29" target="_blank">
+            linkedin.com/in/prishajain29
+        </a>
+    </div>
+</div>
+```
+
+</aside>
+
+<!-- MAIN -->
+
+<main class="main">
+
+<nav class="nav">
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<!-- ABOUT -->
+
+<section id="about" class="section">
+    <h2>About Me</h2>
+
+```
+<p class="text">
+    Hi, I’m Prisha Jain — a first-year B.Tech Computer Science student at Medi-Caps University, Indore, with a strong interest in software development and problem solving.
+</p>
+
+<p class="text">
+    I am currently building my foundation in programming, data structures, and core development concepts through hands-on learning and personal projects. I enjoy exploring how technology can be used to solve real-world problems and continuously improving my skills.
+</p>
+
+<p class="text">
+    I am actively looking for opportunities to gain practical experience by working on real projects and collaborating with startups or teams where I can learn, contribute, and grow as a software developer.
+</p>
+
+<p class="text">
+    I’m always open to learning, connecting, and working on something meaningful! 🚀
+</p>
+```
+
+</section>
+
+<!-- SKILLS -->
+
+<section id="skills" class="section">
+    <h2>Skills</h2>
+
+```
+<div class="skills">
+    <div><i class="fa-solid fa-code"></i> Programming (C / Python)</div>
+    <div><i class="fa-solid fa-brain"></i> Problem Solving</div>
+    <div><i class="fa-brands fa-html5"></i> HTML & CSS</div>
+    <div><i class="fa-solid fa-database"></i> Data Structures</div>
+</div>
+```
+
+</section>
+
+<!-- PROJECTS -->
+
+<section id="projects" class="section">
+    <h2>Projects</h2>
+
+```
+<div class="projects">
+    <div class="project">
+        <h3>Grade Calculator</h3>
+        <p>Calculates total marks, percentage, and grade using programming logic.</p>
+    </div>
+
+    <div class="project">
+        <h3>To-Do List App</h3>
+        <p>A simple app to manage daily tasks with add/delete functionality.</p>
+    </div>
+</div>
+```
+
+</section>
+
+<!-- CONTACT -->
+
+<section id="contact" class="section contact">
+    <h2>Contact</h2>
+
+```
+<p>
+    <i class="fa-solid fa-envelope"></i>
+    <a href="mailto:prishanileshjain@gmail.com">
+        prishanileshjain@gmail.com
+    </a>
+</p>
+
+<p>
+    <i class="fa-brands fa-linkedin"></i>
+    <a href="https://www.linkedin.com/in/prishajain29" target="_blank">
+        linkedin.com/in/prishajain29
+    </a>
+</p>
+```
+
+</section>
+
+</main>
+</div>
+
+</body>
+</html>
