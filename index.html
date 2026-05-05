@@ -21,7 +21,7 @@ body{
 
 .wrap{
     display:grid;
-    grid-template-columns:320px 1fr;
+    grid-template-columns:1fr 320px; /* flipped layout */
     gap:28px;
     max-width:1300px;
     margin:auto;
@@ -33,7 +33,7 @@ body{
     padding:28px;
 }
 
-/* SIDEBAR */
+/* SIDEBAR (RIGHT) */
 .avatar{
     width:180px;
     height:220px;
@@ -76,6 +76,20 @@ body{
 .icon{
     color:#67dcff;
 }
+.info a {
+    color: #67dcff;
+    text-decoration: none;
+}
+
+.info a:visited {
+    color: #67dcff;
+}
+
+.info a:hover {
+    color: #9be7ff;
+    text-decoration: underline;
+}
+
 
 /* NAV */
 .nav{
@@ -149,8 +163,12 @@ body{
 
 /* RESPONSIVE */
 @media(max-width:900px){
-    .wrap{grid-template-columns:1fr}
-    .projects{grid-template-columns:1fr}
+    .wrap{
+        grid-template-columns:1fr; /* stack on mobile */
+    }
+    .projects{
+        grid-template-columns:1fr;
+    }
 }
 </style>
 
@@ -160,35 +178,7 @@ body{
 
 <div class="wrap">
 
-<!-- SIDEBAR -->
-
-<aside class="card">
-    <img src="portfolioimage.jpeg" class="avatar" alt="Prisha Jain">
-
-```
-<div class="name">Prisha Jain</div>
-<div class="role">Aspiring Software Developer 🚀</div>
-
-<div class="line"></div>
-
-<div class="info">
-    <div class="item">
-        <i class="fa-solid fa-envelope icon"></i>
-        <span>prishanileshjain@gmail.com</span>
-    </div>
-
-    <div class="item">
-        <i class="fa-brands fa-linkedin icon"></i>
-        <a href="https://www.linkedin.com/in/prishajain29" target="_blank">
-            linkedin.com/in/prishajain29
-        </a>
-    </div>
-</div>
-```
-
-</aside>
-
-<!-- MAIN -->
+<!-- MAIN (LEFT NOW) -->
 
 <main class="main">
 
@@ -204,9 +194,9 @@ body{
 <section id="about" class="section">
     <h2>About Me</h2>
 
-```
+
 <p class="text">
-    Hi, I’m Prisha Jain — a first-year B.Tech Computer Science student at Medi-Caps University, Indore, with a strong interest in software development and problem solving.
+    Hi, I’m Prisha Jain a first-year B.Tech Computer Science student at Medi-Caps University, Indore, with a strong interest in software development and problem solving.
 </p>
 
 <p class="text">
@@ -220,7 +210,7 @@ body{
 <p class="text">
     I’m always open to learning, connecting, and working on something meaningful! 🚀
 </p>
-```
+
 
 </section>
 
@@ -229,14 +219,14 @@ body{
 <section id="skills" class="section">
     <h2>Skills</h2>
 
-```
+
 <div class="skills">
     <div><i class="fa-solid fa-code"></i> Programming (C / Python)</div>
     <div><i class="fa-solid fa-brain"></i> Problem Solving</div>
     <div><i class="fa-brands fa-html5"></i> HTML & CSS</div>
     <div><i class="fa-solid fa-database"></i> Data Structures</div>
 </div>
-```
+
 
 </section>
 
@@ -245,7 +235,7 @@ body{
 <section id="projects" class="section">
     <h2>Projects</h2>
 
-```
+
 <div class="projects">
     <div class="project">
         <h3>Grade Calculator</h3>
@@ -257,7 +247,7 @@ body{
         <p>A simple app to manage daily tasks with add/delete functionality.</p>
     </div>
 </div>
-```
+
 
 </section>
 
@@ -266,7 +256,7 @@ body{
 <section id="contact" class="section contact">
     <h2>Contact</h2>
 
-```
+
 <p>
     <i class="fa-solid fa-envelope"></i>
     <a href="mailto:prishanileshjain@gmail.com">
@@ -280,11 +270,42 @@ body{
         linkedin.com/in/prishajain29
     </a>
 </p>
-```
+
 
 </section>
 
 </main>
+
+<!-- SIDEBAR (RIGHT NOW) -->
+
+<aside class="card">
+    <img src="portfolioimage.jpeg" class="avatar" alt="Prisha Jain">
+
+
+<div class="name">Prisha Jain</div>
+<div class="role">Aspiring Software Developer 🚀</div>
+
+<div class="line"></div>
+
+<div class="info">
+    <div class="item">
+        <i class="fa-solid fa-envelope icon"></i>
+        <a href="mailto:prishanileshjain@gmail.com">
+           prishanileshjain@gmail.com
+        </a>
+    </div>
+
+    <div class="item">
+        <i class="fa-brands fa-linkedin icon"></i>
+        <a href="https://www.linkedin.com/in/prishajain29" target="_blank">
+            linkedin.com/in/prishajain29
+        </a>
+    </div>
+</div>
+
+
+</aside>
+
 </div>
 
 </body>
